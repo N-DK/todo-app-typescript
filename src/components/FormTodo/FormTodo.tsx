@@ -49,7 +49,7 @@ const FormTodo: React.FC<TypeForm> = ({
     };
 
     useEffect(() => {
-        if (data) setStatus(data.status);
+        setStatus(data ? data.status : false);
     }, [data]);
 
     return (

@@ -15,8 +15,9 @@ const Home: React.FC = () => {
     const [data, setData] = useState<TodoType>();
 
     const showModal = () => {
-        setIsModalOpen(true);
         setData(undefined);
+        setTodo('');
+        setIsModalOpen(true);
     };
 
     const handleOnchange = (e: ChangeEvent<HTMLInputElement>) => {
